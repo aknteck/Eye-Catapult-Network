@@ -22,7 +22,7 @@
 }
 
 :root {
-    --text-color: black;
+    --text-color: white;
     --main-color: #0D7A64;
 }
 
@@ -37,7 +37,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 18px 100px;
-    background: #EDECEA;
+    background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
 }
@@ -70,6 +70,11 @@ header {
             font-weight: 600; 
             color: var(--text-color); 
             transition: all .5s ease; 
+             text-shadow: 
+                        0 0 5px #fff,
+                        0 0 10px #71f095,
+                        0 0 20px #71f095,
+                        0 0 40px #71f095;
         }
 
 .navbar a:hover 
@@ -128,14 +133,8 @@ header {
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    /* Sepia tone, lowered contrast, and faded blacks for a nostalgic look */
- /* Cinematic Color Grading Filters: 
-               - contrast: Deepens shadows and brightens highlights (Teal & Orange style vibe)
-               - brightness: Keeps the cinematic moody dark tone
-               - saturate: Slightly boosts colors for Hollywood pop
-               - hue-rotate: Shifts greens/blues subtly toward a cinematic teal tint */
-            filter: contrast(125%) brightness(85%) saturate(115%) hue-rotate(-5deg);
-    
+    backdrop-filter: blur(10px) saturate(120%); /* Filters everything behind it */
+
     
     
     
@@ -143,8 +142,15 @@ header {
 
 
 .home-text h1 
-              { font-size: 2.7rem; 
-                color: #FFFFFF;
+              { 
+                  font-size: 2.7rem; 
+                  color: #FFFFFF;
+                  /* Layered text-shadows create the intense glow effect */
+                  text-shadow: 
+                        0 0 5px #fff,
+                        0 0 10px #71f095,
+                        0 0 20px #71f095,
+                        0 0 40px #71f095;
               }
 .home-text p { font-size: 1.238rem; margin: 0.4rem 0 1.8rem; color: white; }
 .home-text span { color: var(--main-color); }
@@ -222,6 +228,11 @@ header {
     justify-content: space-between;
     gap: 1rem;
     margin-top: 2rem;
+     text-shadow: 
+                        0 0 5px #fff,
+                        0 0 10px #71f095,
+                        0 0 20px #71f095,
+                        0 0 40px #71f095;
 }
 
 .brands-container img { width: 100px; filter: grayscale(1); transition: all .5s ease; }
@@ -266,13 +277,18 @@ header {
 .footer-box h3 { font-weight: 500; margin-bottom: 10px; }
 .footer-box span { color: var(--main-color); }
 .footer-box p { font-size: .938rem; margin-bottom: 10px; }
-.footer-box li a { color: var(--text-color); }
+.footer-box li a 
+                { 
+                    color: black; 
+                    text-shadow: 
+                       
+                }
     .footer-box li a:hover { color: var(--main-color); }
 .social { display: flex; align-items: center; }
-    .social a { font-size: 24px; margin-right: 10px; color: var(--text-color); }
+    .social a { font-size: 24px; margin-right: 10px; color: black; }
         .social a:hover { color: var(--main-color); }
 .contact-info { display: flex; flex-direction: column; }
-    .contact-info span { color: var(--text-color); }
+    .contact-info span { color: black; }
 .copyright { padding: 20px; text-align: center; }
     .copyright span { font-family: 'Turret Road';}
 
