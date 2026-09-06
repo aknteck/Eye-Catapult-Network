@@ -84,7 +84,9 @@ header {
 #menu-icon 
         { font-size: 2rem;
           cursor: pointer; 
-          display: none; }
+          display: none; 
+          color: #fff;
+}
 
 /* 3D Button Styling */
         .live-stream-button{
@@ -321,8 +323,18 @@ header {
         text-align: center;
     }
 
-    .navbar a { padding: 1.5rem; display: block; }
-        .navbar a:hover { color: #FFFFFF; background: var(--main-color); }
+    .navbar a 
+            { 
+                padding: 1.5rem; 
+                display: block; 
+                color: black;
+    
+    
+            }
+        .navbar a:hover 
+                    { 
+                        color: black; background: var(--main-color); 
+                    }
     .navbar.active { top: 100%; }
 
     .about { grid-template-columns: 1fr; text-align: center; }
