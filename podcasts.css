@@ -128,7 +128,7 @@ header {
 .home {
     width: 100%;
     min-height: 65vh;
-    background-image: url('img/mpc.jpeg') ;
+    background-image: url('mpc.jpeg') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -246,7 +246,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('img/images_920ad771-044e-4f.jpg');
+    background-image: url('images_920ad771-044e-4f.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
