@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
 /* Import an artistic font from Google Fonts */
-    @import url('https://googleapis.com');
+    @import url('img/');
 
     /* Or use @font-face for a local custom file */
     @font-face {
@@ -128,19 +128,22 @@ header {
 .home {
     width: 100%;
     min-height: 85vh;
-    background-image: url(flat,750x,075,f-pad,750x1000,f8f8f8.jpg) ;
+    background-image: url('img/flat,750x,075,f-pad,750x1000,f8f8f8.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
+    background-color: #2c2c2c;
+    z-index: calc();
     display: flex;
     align-items: center;
     backdrop-filter: blur(10px) saturate(120%); /* Filters everything behind it */
+    position: relative;
+    /* CSS Filters to flatten colors, boost vibrance, and add a graphic feel */
+    filter: contrast(160%) saturate(140%) brightness(1.1);
 
-    
-    
-    
 }
+
 
 
 .home-text h1 
